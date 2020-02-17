@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sui: Skills - Hangman</title>
+	<meta name="Description" content="Sui by Aquilonius: About.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#ff4500">
+<!--	<meta name="theme-color" content="#ef4923">-->
+    <link href="css/sui.css" rel="stylesheet" />
+    <link href="css/hangman.css" rel="stylesheet" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#ff4500">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="img/browserconfig.xml">
+
+</head>
+
+<body class="sui-bg">
+	<div class="navbar">
+		<h1 class="sui-title clueButton">Hangman</h1>
+		<nav class="">
+			<a class="sui-home clueButton"></a>
+			<a class="sui-about" href="index.html"><span class="">About</span></a>
+			<a class="sui-knowledge" href="knowledge.html"><span class="">Knowledge</span></a>
+			<a id="dropbtn-skills" class="sui-skills" href="skills.html"><span class="">Skills</span></a>
+			<a class="sui-contact" href="contact.html"><span class="">Contact</span></a>
+		</nav>
+		<div id="subnav-skills" class="subnav">
+			<span>Sample Projects:</span>
+			<a href="think.html">Think</a>
+			<a href="hangman.html">Hangman</a>
+		</div>
+	</div>
+
+	<div class="container hangmancontainer">
+        <h2>Hangman</h2>
+    </div>
+    <div id="phraseHolder" class="container hangmancontainer"></div>
+    <p id="clue"></p>  
+    <div class="container">
+		<div class="item item-right align-right">
+			<canvas id="stickman">Your Browser does not support the Hangman graphics. For the full experience please use a browser with HTML5 compatibility.</canvas>
+		</div>
+
+		<div class="item item-left">
+            <div class="wrapper">
+                <p>Use the alphabet to guess the letters that make up the phrase: </p>
+                <div id="buttons"></div>     
+                <p id="mylives"></p>
+                <div class="container">
+                    <button id="startButton">Start</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+		
+<footer class="">
+    <div class="container">
+        <div class="third third-first">
+            <h3 class="">Navigation</h3>
+            <ul>
+                <li><a class="sui-about" href="index.html"><span class="">About</span></a></li>
+                <li><a class="sui-knowledge" href="knowledge.html"><span class="">Knowledge</span></a></li>
+                <li><a class="sui-skills" href="skills.html"><span class="">Skills</span></a></li>
+                <li><a class="sui-contact" href="contact.html"><span class="">Contact</span></a></li>
+            </ul>
+        </div>
+        <div class="third third-second">
+            <h3 class="">Certification</h3>
+            <p>Microsoft Certified Educator</p>
+            <p>Microsoft Certified Application Specialist</p>
+            <p>Adobe Certified Associate</p>
+        </div>
+        <div class="third third-third">
+            <h3 class="">Contact</h3>
+            <ul>
+                <li><a class="sui-social" href="https://www.linkedin.com/in/markbennison" target="_blank" rel="noreferrer"><span class="">LinkedIn</span></a></li>
+                <li><a class="sui-social" href="https://twitter.com/mark_bennison" target="_blank" rel="noreferrer"><span class="">Twitter</span></a></li>
+                <li><a class="sui-social" href="mailto:mark.bennison@live.co.uk" ><span class="">Email</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p>&copy; 2020 - Sui by Aquilonius</p>
+    </div>
+    
+</footer>
+<div id="alertOnline" class="alert success">
+    <span id="alertOnlineClose" class="closebtn">&times;</span>  
+    <strong>Network Connected</strong>
+</div>
+<div id="alertOffline" class="alert">
+    <span id="alertOfflineClose" class="closebtn">&times;</span>  
+    <strong>No Network Connectivity</strong>.
+</div>
+
+<script src="js/script.js"></script>
+
+<script src="js/hangman.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="js/firebase-init.js"></script>
+
+</body>
+
+</html>

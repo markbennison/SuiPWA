@@ -1,0 +1,132 @@
+* {box-sizing: border-box}
+
+.carouselSlide {
+  display: none
+}
+
+.carouselSlide img {
+  width:100%;
+}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.carousel {
+  max-width: 960px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideCaption {
+  color: #f2f2f2;
+  font-size: 1.5em;
+  padding: 8px 0px;
+  margin: 0px;
+
+  color: #333;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  font-style: italic;
+}
+/* The dot-indicators */
+.dotHolder {
+
+  display: none;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+
+  .prev, .next {
+    font-size: 1.2em
+  }
+
+  /* Caption text */
+.slideCaption {
+  color: #f2f2f2;
+  font-size: 1.5em;
+  padding: 8px 24px;
+  margin-top: -70px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 52px;
+}
+
+ /* The dot-indicators */
+.dotHolder {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  display: block;
+  text-align:center;
+}
+
+.dot {
+ cursor: pointer;
+ height: 12px;
+ width: 12px;
+ margin: 0 6px;
+ background-color: #bbb;
+ border-radius: 50%;
+ display: inline-block;
+ opacity: 0.8;
+}
+
+.dot.slideactive, .dot:hover {
+  background-color: #717171;
+}
+
+}

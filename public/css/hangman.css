@@ -1,0 +1,100 @@
+.wrapper {
+    content: "";
+    /*display: table;*/
+    clear: both;
+}
+
+.align-right{
+    text-align: center;
+}
+
+canvas {
+    color: black;
+    border: black solid 2px;
+    width: 60%;
+}
+#alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+}
+#alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 48px;
+    /*height: 48px;*/
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background: midnightblue;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+#alphabet li:hover {
+    background: orangered;
+    color: #fff;
+}
+#clue {
+    font-size: 1.2em;
+    color: orangered;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+#phrase {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+}
+#phrase li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 1.5em;
+}
+.chosen {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default;
+}
+.chosen:hover {
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.container.hangmancontainer{
+    padding: 5px;
+	margin-bottom: 0px;
+}
+#mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+}
+
+@media all and (min-width: 600px) {
+.align-right{
+    text-align: right;
+}
+}

@@ -1,0 +1,218 @@
+.donut {
+    position: relative;
+    float: left;
+    margin: 12px;
+}
+
+.donut h2 {
+    text-align:center;
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: orangered;
+}
+
+.seg10 .circle_animation {
+    -webkit-animation: seg10 1s ease-out forwards;
+    animation: seg10 1s ease-out forwards;
+}
+.seg20 .circle_animation {
+    -webkit-animation: seg20 1s ease-out forwards;
+    animation: seg20 1s ease-out forwards;
+}
+.seg25 .circle_animation {
+    -webkit-animation: seg25 1s ease-out forwards;
+    animation: seg25 1s ease-out forwards;
+}
+.seg30 .circle_animation {
+    -webkit-animation: seg30 1s ease-out forwards;
+    animation: seg30 1s ease-out forwards;
+}
+.seg40 .circle_animation {
+    -webkit-animation: seg40 1s ease-out forwards;
+    animation: seg40 1s ease-out forwards;
+    stroke: orange;
+}
+.seg50 .circle_animation {
+    -webkit-animation: seg50 1s ease-out forwards;
+    animation: seg50 1s ease-out forwards;
+    stroke: orange;
+}
+.seg60 .circle_animation {
+    -webkit-animation: seg60 1s ease-out forwards;
+    animation: seg60 1s ease-out forwards;
+    stroke: orange;
+}
+.seg70 .circle_animation {
+    -webkit-animation: seg70 1s ease-out forwards;
+    animation: seg70 1s ease-out forwards;
+    stroke: orange;
+}
+.seg75 .circle_animation {
+    -webkit-animation: seg75 1s ease-out forwards;
+    animation: seg75 1s ease-out forwards;
+    stroke: LimeGreen   ;
+}
+.seg80 .circle_animation {
+    -webkit-animation: seg80 1s ease-out forwards;
+    animation: seg80 1s ease-out forwards;
+    stroke: LimeGreen   ;
+}
+.seg90 .circle_animation {
+    -webkit-animation: seg90 1s ease-out forwards;
+    animation: seg90 1s ease-out forwards;
+    stroke: LimeGreen   ;
+}
+.seg100 .circle_animation {
+    -webkit-animation: seg100 1s ease-out forwards;
+    animation: seg100 1s ease-out forwards;
+    stroke: LimeGreen   ;
+}
+
+@-webkit-keyframes seg10 {
+    to {
+      stroke-dashoffset: 396;
+    }
+  }
+  @keyframes seg10 {
+    to {
+      stroke-dashoffset: 396;
+    }
+  }
+
+@-webkit-keyframes seg20 {
+    to {
+      stroke-dashoffset: 352;
+    }
+  }
+  @keyframes seg20 {
+    to {
+      stroke-dashoffset: 352;
+    }
+  }
+
+@-webkit-keyframes seg25 {
+    to {
+      stroke-dashoffset: 330;
+    }
+  }
+  @keyframes seg25 {
+    to {
+      stroke-dashoffset: 330;
+    }
+  }
+
+  @-webkit-keyframes seg30 {
+    to {
+      stroke-dashoffset: 308;
+    }
+  }
+  @keyframes seg30 {
+    to {
+      stroke-dashoffset: 308;
+    }
+  }
+
+@-webkit-keyframes seg40 {
+    to {
+      stroke-dashoffset: 264;
+    }
+  }
+  @keyframes seg40 {
+    to {
+      stroke-dashoffset: 264;
+    }
+  }
+
+@-webkit-keyframes seg50 {
+  to {
+    stroke-dashoffset: 220;
+  }
+}
+@keyframes seg50 {
+  to {
+    stroke-dashoffset:  220;
+  }
+}
+
+@-webkit-keyframes seg60 {
+    to {
+      stroke-dashoffset: 176;
+    }
+  }
+  @keyframes seg60 {
+    to {
+      stroke-dashoffset:  176;
+    }
+  }
+
+  @-webkit-keyframes seg70 {
+    to {
+      stroke-dashoffset: 132;
+    }
+  }
+  @keyframes seg70 {
+    to {
+      stroke-dashoffset:  132;
+    }
+  }
+
+@-webkit-keyframes seg75 {
+    to {
+      stroke-dashoffset: 110;
+    }
+  }
+  @keyframes seg75 {
+    to {
+      stroke-dashoffset:  110;
+    }
+  }
+
+  @-webkit-keyframes seg80 {
+    to {
+      stroke-dashoffset: 88;
+    }
+  }
+  @keyframes seg80 {
+    to {
+      stroke-dashoffset:  88;
+    }
+  }
+
+  @-webkit-keyframes seg90 {
+    to {
+      stroke-dashoffset: 44;
+    }
+  }
+  @keyframes seg90 {
+    to {
+      stroke-dashoffset:  44;
+    }
+  }
+
+@-webkit-keyframes seg100 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes seg100 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  .donut {
+    margin: 20px;
+  }
+}

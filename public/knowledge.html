@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sui: Knowledge</title>
+	<meta name="Description" content="Sui by Aquilonius: Knowledge.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#ff4500">
+
+	<link href="css/sui.css" rel="stylesheet" />
+	<link href="css/carousel.css" rel="stylesheet" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#ff4500">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="img/browserconfig.xml">
+</head>
+
+<body class="sui-bg">
+	<div class="navbar">
+		<h1 class="sui-title">Knowledge</h1>
+		<nav class="">
+			<a class="sui-home" href="index.html"><span class=""></span></a>
+			<a class="sui-about" href="index.html"><span class="">About</span></a>
+			<a class="sui-knowledge active" href="knowledge.html"><span class="">Knowledge</span></a>
+			<a id="dropbtn-skills" class="sui-skills" href="skills.html"><span class="">Skills</span></a>
+			<a class="sui-contact" href="contact.html"><span class="">Contact</span></a>
+		</nav>
+		<div id="subnav-skills" class="subnav hideOnSmallMed">
+			<span>Sample Projects:</span>
+			<a href="think.html">Think</a>
+			<a href="hangman.html">Hangman</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="carousel">
+			<div class="carouselSlide fade">
+				<img srcset="img/slide1_320.webp 320w,
+							 img/slide1_640.webp 640w,
+							 img/slide1_960.webp 960w"
+					 sizes="(max-width: 320px) 320px,
+							(min-width: 321px) and (max-width: 640px) 640px,
+							(min-width: 641px) 960px"
+					 src="img/slide1_960.jpg" alt="Unity Banner">
+				<div class="slideCaption">Unity: C# and Design Patterns</div>
+			</div>
+		
+			<div class="carouselSlide fade">
+				<img srcset="img/slide2_320.webp 320w,
+							 img/slide2_640.webp 640w,
+							 img/slide2_960.webp 960w"
+					 sizes="(max-width: 320px) 320px,
+					 (min-width: 321px) and (max-width: 640px) 640px,
+					 (min-width: 641px) 960px"
+					 src="img/slide2_960.jpg" alt="Visual Studio Banner">
+				<div class="slideCaption">Visual Studio: C#, ASP, Xamarin, MVC, MVVM</div>
+			</div>
+		
+			<div class="carouselSlide fade">
+				<img srcset="img/slide3_320.webp 320w,
+							 img/slide3_640.webp 640w,
+							 img/slide3_960.webp 960w"
+					 sizes="(max-width: 320px) 320px,
+					 (min-width: 321px) and (max-width: 640px) 640px,
+					 (min-width: 641px) 960px"
+					 src="img/slide3_960.jpg" alt="Web Technologies Banner">
+				<div class="slideCaption">Web Tech: HMTL5, CSS3, JS, PWAs, NodeJS</div>
+			</div>
+		
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+			<a class="next" onclick="nextSlide(1)">&#10095;</a>
+		</div>
+
+		<!-- The dot-indicators -->
+		<div class="dotHolder">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+	</div>
+	<div class="container">
+		<div class="article">
+			<div class="article-thumbnail">
+				<img srcset="img/staffordshireuniversity_152.webp 152w"
+					 sizes="152px"
+					 src="img/staffordshireuniversity_152.jpg" alt="Thumbnail of Staffordshire University's Logo">
+			</div>
+			<div class="article-detail">
+				<h3>MSc in Computer Science (Software Engineering)</h3>
+				<p>Studying part-time, distance learning, with an aim to develop masters-level software engineering and web development skills. Staffordshire University offered a great range of optional units to really allow me to choose a tailored course packed with practical skills.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div class="article-thumbnail">
+				<img srcset="img/durhamuniversity_152.webp 152w"
+					 sizes="152px"
+					 src="img/durhamuniversity_152.jpg" alt="Thumbnail of Durham University's Logo">
+			</div>
+			<div class="article-detail">
+				<h3>Postgraduate Diploma in Education</h3>
+				<p>Furthering my knowledge and research in education, this post-grad qualification was completed in my personal time and through self-funding. I decided not to advance it to Masters level for the MA.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div class="article-thumbnail">
+				<img srcset="img/durhamuniversity_152.webp 152w"
+					 sizes="152px"
+					 src="img/durhamuniversity_152.jpg" alt="Thumbnail of Durham University's Logo">
+			</div>
+			<div class="article-detail">
+				<h3>BSc in ICT & Education</h3>
+				<p>My first degree where I trained to be a primary school teacher. I took optional modules in computer programming and gained teaching experience in several primary schools.</p>
+			</div>
+		</div>
+	</div>
+
+	<footer class="">
+		<div class="container">
+			<div class="third third-first">
+				<h3 class="">Navigation</h3>
+				<ul>
+					<li><a class="sui-about" href="index.html"><span class="">About</span></a></li>
+					<li><a class="sui-knowledge" href="knowledge.html"><span class="">Knowledge</span></a></li>
+					<li><a class="sui-skills" href="skills.html"><span class="">Skills</span></a></li>
+					<li><a class="sui-contact" href="contact.html"><span class="">Contact</span></a></li>
+				</ul>
+			</div>
+			<div class="third third-second">
+				<h3 class="">Certification</h3>
+				<p>Microsoft Certified Educator</p>
+				<p>Microsoft Certified Application Specialist</p>
+				<p>Adobe Certified Associate</p>
+			</div>
+			<div class="third third-third">
+				<h3 class="">Contact</h3>
+				<ul>
+					<li><a class="sui-social" href="https://www.linkedin.com/in/markbennison" target="_blank" rel="noreferrer"><span class="">LinkedIn</span></a></li>
+					<li><a class="sui-social" href="https://twitter.com/mark_bennison" target="_blank" rel="noreferrer"><span class="">Twitter</span></a></li>
+					<li><a class="sui-social" href="mailto:mark.bennison@live.co.uk" ><span class="">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<p>&copy; 2020 - Sui by Aquilonius</p>
+		</div>
+		
+	</footer>
+
+	<div id="alertOnline" class="alert success">
+		<span id="alertOnlineClose" class="closebtn">&times;</span>  
+		<strong>Network Connected</strong>
+	</div>
+	<div id="alertOffline" class="alert">
+		<span id="alertOfflineClose" class="closebtn">&times;</span>  
+		<strong>No Network Connectivity</strong>.
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+	<script src="js/firebase-init.js"></script>
+
+</body>
+
+</html>

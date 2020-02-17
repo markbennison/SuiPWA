@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sui: Contact</title>
+	<meta name="Description" content="Sui by Aquilonius: Contact.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#ff4500">
+
+	<link href="css/sui.css" rel="stylesheet" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#ff4500">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="img/browserconfig.xml">
+</head>
+
+<body class="sui-bg">
+	<div class="navbar">
+		<h1 class="sui-title">Contact</h1>
+		<nav class="">
+			<a class="sui-home" href="index.html"><span class=""></span></a>
+			<a class="sui-about" href="index.html"><span class="">About</span></a>
+			<a class="sui-knowledge" href="knowledge.html"><span class="">Knowledge</span></a>
+			<a id="dropbtn-skills" class="sui-skills" href="skills.html"><span class="">Skills</span></a>
+			<a class="sui-contact active" href="contact.html"><span class="">Contact</span></a>
+		</nav>
+		<div id="subnav-skills" class="subnav hideOnSmallMed">
+			<span>Sample Projects:</span>
+			<a href="think.html">Think</a>
+			<a href="hangman.html">Hangman</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="item item-right">
+			<h2 class="">Mark Bennison</h2>
+			<p>Hi, and welcome to my online portfolio. It has been developed for an MSc assignment and as such involves no CSS frameworks, preprocessors, jQuery or other JavaScript libraries except those requried by Google Firestore.</p>
+			<p>You can contact me through the methods below:</p>
+			<ul>
+				<li><a class="contactLink" href="https://www.linkedin.com/in/markbennison" target="_blank" rel="noreferrer">LinkedIn</a></li>
+				<li><a class="contactLink" href="https://twitter.com/mark_bennison" target="_blank" rel="noreferrer">Twitter</a></li>
+				<li><a class="contactLink" href="mailto:mark.bennison@live.co.uk" >Email</a></li>
+			</ul>
+		</div>
+		<div class="item item-left">
+			<img srcset="img/profile_248.webp 248w,
+						 img/profile_512.webp 512w"
+				 sizes="(max-width: 800px) 248px,
+				 		(min-width: 801px) 512px"
+				 src="img/profile_512.jpg" alt="Image of Mark Bennison">
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="">Contact Me</h2>
+		<form method="get">
+			<p>
+				<label for="name">Name*</label>
+				<input type="text" id="name" name="name" required></p>
+				<div id="nameValidText" class="validation"></div>
+			
+			<p>
+				<label for="email">Email*</label>
+				<input type="email" id="email" name="email" required></p>
+				<div id="emailValidText" class="validation"></div>
+
+			<p>
+				<label for="telephone">Telephone</label>
+				<input type="tel" id="telephone" name="telephone" maxlength="12"></p>
+				<div id="telephoneValidText" class="validation"></div>
+
+			<p>
+				<label for="message">Message*</label>
+				<textarea wrap="hard" id="message" name="message" cols="20" maxlength="280" required></textarea></p>
+				<div id="messageValidText" class="validation"></div>
+
+			<div class="center"><button type="button" name="submit" id="submit" class="submitButton">Submit</button></div>
+		</form>
+
+	</div>
+
+	<footer class="">
+		<div class="container">
+			<div class="third third-first">
+				<h3 class="">Navigation</h3>
+				<ul>
+					<li><a class="sui-about" href="index.html"><span class="">About</span></a></li>
+					<li><a class="sui-knowledge" href="knowledge.html"><span class="">Knowledge</span></a></li>
+					<li><a class="sui-skills" href="skills.html"><span class="">Skills</span></a></li>
+					<li><a class="sui-contact" href="contact.html"><span class="">Contact</span></a></li>
+				</ul>
+			</div>
+			<div class="third third-second">
+				<h3 class="">Certification</h3>
+				<p>Microsoft Certified Educator</p>
+				<p>Microsoft Certified Application Specialist</p>
+				<p>Adobe Certified Associate</p>
+			</div>
+			<div class="third third-third">
+				<h3 class="">Contact</h3>
+				<ul>
+					<li><a class="sui-social" href="https://www.linkedin.com/in/markbennison" target="_blank" rel="noreferrer"><span class="">LinkedIn</span></a></li>
+					<li><a class="sui-social" href="https://twitter.com/mark_bennison" target="_blank" rel="noreferrer"><span class="">Twitter</span></a></li>
+					<li><a class="sui-social" href="mailto:mark.bennison@live.co.uk" ><span class="">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<p>&copy; 2020 - Sui by Aquilonius</p>
+		</div>
+		
+	</footer>
+
+	<div id="alertOnline" class="alert success">
+		<span id="alertOnlineClose" class="closebtn">&times;</span>  
+		<strong>Network Connected</strong>
+	</div>
+	<div id="alertOffline" class="alert">
+		<span id="alertOfflineClose" class="closebtn">&times;</span>  
+		<strong>No Network Connectivity</strong>.
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+	<script src="js/firebase-init.js"></script>
+
+</body>
+
+</html>

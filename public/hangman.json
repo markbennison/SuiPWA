@@ -1,0 +1,46 @@
+[
+	{
+		"phrase": "hot potatoe",
+		"clue": "To speak of an issue which many people are talking about and which is usually disputed."
+	},
+	{
+        "phrase": "penny for your thoughts",
+		"clue": "A way of asking what someone is thinking."
+	},
+	{
+        "phrase": "best of both worlds",
+		"clue": "Having all the advantages."
+    },
+    {
+        "phrase": "blessing in disguise",
+		"clue": "Something good that isn't recognized at first."
+	},
+	{
+        "phrase": "burn the midnight oil",
+		"clue": "To work late into the night, alluding to the time before electric lighting."
+    },
+	{
+        "phrase": "cut corners",
+		"clue": "When something is done badly to save money."
+    },
+    {
+        "phrase": "devils advocate",
+		"clue": "To present a counter argument."
+	},
+	{
+        "phrase": "it takes two to tango",
+		"clue": "Actions or communications need more than one person."
+    },
+    {
+        "phrase": "last straw",
+		"clue": "The final problem in a series of problems."
+    },
+    {
+        "phrase": "miss the boat",
+		"clue": "When someone missed his or her chance."
+    },
+    {
+        "phrase": "on the ball",
+		"clue": "When someone understands the situation well."
+    }
+]
